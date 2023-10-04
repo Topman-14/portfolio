@@ -1,0 +1,25 @@
+.main{
+    height: calc(100vh - 120px);
+   display: flex;
+   justify-content: space-between;
+   color: rgb(218, 235, 217);
+   align-items: center;
+   margin: 0 50px;
+}
+.heroText{
+    width: 50%;
+
+}
+.heroText >p{
+    color: aquamarine;
+}
+.heroText >h2{
+    font-size: clamp(40px, 8vw, 90px);
+    font-weight: 600;
+    line-height: 1.2em;
+    color: white;
+}
+.descBig{
+    color: rgb(106, 105, 105) !important;
+    font-size: clamp(30px, 6vw, 60px) !important;
+}
