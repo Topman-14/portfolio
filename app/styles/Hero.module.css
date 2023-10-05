@@ -31,15 +31,26 @@
     transition: 0.3s;
 }
 .heroImg{
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 400px;
-    height: 400px;
-    /* clip-path: polygon(50% 0%, 100% 5%, 100% 80%, 51% 100%, 0 95%, 0 20%); */
+    width: 400px;
+    z-index: 999;
     clip-path: polygon(15% 0, 100% 0%, 100% 100%, 16% 100%, 0 50%);
     margin-right: 50px;
+    position: relative;
+}
+.heroImgBase{
+    position: absolute;
+    right: 50px;
+    bottom: 120px;
+    width: 360px;
+    height: 360px;
+    clip-path: polygon(15% 0, 100% 0%, 100% 100%, 16% 100%, 0 50%);
+    transition: 0.2s ease;
 }
 .heroImg img{
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    z-index: 999;
+    position: relative;
 }

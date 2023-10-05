@@ -3,17 +3,8 @@ import styles from '../styles/Hero.module.css'
 import { FaGithub, FaLinkedin } from "react-icons/fa6"; 
 import Image from 'next/image';
 import Button from './Button';
+import Link from 'next/link';
 function Hero({darkMode}) {
-
-  const handleDownload = () => {
-    // const link = document.createElement('a');
-    // link.download = 'Example-PDF-File';
-
-    // link.href = ExamplePdf;
-
-    // link.click();
-    console.log("hey")
-  };
 
 
   return (
@@ -28,10 +19,16 @@ function Hero({darkMode}) {
               From designing intuitive user interfaces to optimizing backend systems, 
               I take pride in delivering top-notch software that exceeds expectations 😊. 
             </p>
-            <Button isFilled={true} text={"Download Resume"} icon={"download"} isDarkMode={darkMode} onClick={handleDownload}/>
+            <Link href={"/Resume_Akinkuade_Temitope.docx.pdf"} download="Resume-Topman" target="_blank" rel="noreferrer">
+              <Button isFilled={true} text={"Download Resume"} icon={"download"} isDarkMode={darkMode}/>
+            </Link>
           </div>
-          <div className={styles.heroImg}>
-            <Image src={"/images/me.png"} height={400} width={300}/>
+          <div>
+            <div className={styles.heroImg}>
+              <Image src={"/images/me.png"} height={400} width={300} alt='An image of me - Topman' priority={true}/>
+            </div>
+            <div className={styles.heroImgBase} style={darkMode? {background:"linear-gradient(90deg, rgba(200,241,153,1) 0%, rgba(0,212,255,1) 100%)"}: {background:"black"}}>
+            </div>
           </div>
       </section>
   )
