@@ -4,11 +4,11 @@
    justify-content: space-between;
    color: rgb(218, 235, 217);
    align-items: center;
+   position: relative;
    margin: 0 50px;
 }
 .heroText{
     width: 50%;
-
 }
 .name{
     font-size: clamp(40px, 8vw, 90px);
@@ -41,7 +41,7 @@
 }
 .heroImgBase{
     position: absolute;
-    right: 50px;
+    right: 0;
     bottom: 120px;
     width: 360px;
     height: 360px;
