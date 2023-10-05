@@ -1,6 +1,6 @@
 .logo{
     font-size: 2.2em;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 0.03em;
     background: linear-gradient(90deg, rgba(200,241,153,1) 0%, rgba(0,212,255,1) 100%);
     -webkit-background-clip: text;
@@ -29,11 +29,13 @@
     transform: scaleX(1);
   }
   .header{
-    background: #e5e5e5;
+    background: #fff;
     color: #1b2b26;
     transition: 0.2s ease;
-}
-.headerDark{
+    clip-path: polygon(100% 0, 100% 80%, 98% 100%, 2% 100%, 0 80%, 0 0);
+  }
+  .headerDark{
+    clip-path: polygon(100% 0, 100% 80%, 98% 100%, 2% 100%, 0 80%, 0 0);
     background: #171717;
     color: #e1e1e1;
     transition: 0.2s ease;

@@ -1,5 +1,5 @@
 'use client'
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import { useState } from 'react'
 
@@ -9,9 +9,11 @@ export default function Home() {
     setIsDarkMode(prev => !prev)
   }
   return (
-    <main className="flex flex-col min-h-screen bg-[#141414] container mx-auto relative">
-      <Navbar darkMode={isDarkMode} handleClick={toggleTheme}/>
-      <Hero />
+    <main style={isDarkMode? {background: "#121212"} : {background: "#e1e1e1"}}>
+      <div className="flex flex-col min-h-screen container mx-auto relative">
+        <Navbar darkMode={isDarkMode} handleClick={toggleTheme}/>
+        <Hero darkMode={isDarkMode}/>
+      </div>
     </main>
   )
 }
