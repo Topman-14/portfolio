@@ -1,8 +1,9 @@
 'use client'
+import { useState } from 'react'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
-import { useState } from 'react'
 import Projects from './components/Projects.jsx'
+import About from './components/About.jsx'
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(true)
@@ -15,6 +16,7 @@ export default function Home() {
       <div className="flex flex-col min-h-screen container mx-auto relative px-5">
         <Navbar darkMode={isDarkMode} handleClick={toggleTheme}/>
         <Hero darkMode={isDarkMode}/>
+        <About darkMode={isDarkMode} />
         <Projects darkMode={isDarkMode} />
       </div>
     </main>
