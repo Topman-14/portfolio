@@ -34,15 +34,15 @@
     /* overflow: hidden; */
     width: 400px;
     width: 400px;
-    z-index: 999;
+    z-index: 70;
     clip-path: polygon(15% 0, 100% 0%, 100% 100%, 16% 100%, 0 50%);
     margin-right: 50px;
     position: relative;
 }
 .heroImgBase{
     position: absolute;
-    right: 0;
-    bottom: 120px;
+    right: 30px;
+    bottom: 140px;
     width: 360px;
     height: 360px;
     clip-path: polygon(15% 0, 100% 0%, 100% 100%, 16% 100%, 0 50%);

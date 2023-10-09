@@ -1,4 +1,9 @@
 .wrapper{
-    padding: 10px 15px;
+    padding: 20px 0;
     min-height: 100vh;
+}
+.wrapper > h3{
+    font-size: 2.8em;
+    font-weight: 600;
+    margin-bottom: 50px;
 }

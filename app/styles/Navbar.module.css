@@ -29,14 +29,23 @@
     transform: scaleX(1);
   }
   .header{
-    background: #fff;
+    background: #ffffff96;
     color: #1b2b26;
     transition: 0.2s ease;
     clip-path: polygon(100% 0, 100% 80%, 98% 100%, 2% 100%, 0 80%, 0 0);
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border: 1px solid #a1a1a1;
   }
   .headerDark{
     clip-path: polygon(100% 0, 100% 80%, 98% 100%, 2% 100%, 0 80%, 0 0);
-    background: #171717;
+    background: #01182ede;
+    backdrop-filter: blur(5px);
     color: #e1e1e1;
     transition: 0.2s ease;
+    position: sticky;
+    top: 0;
+    z-index: 999;
   }
