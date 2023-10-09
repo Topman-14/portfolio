@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="7rem" width="405px">
+  <text x="0" y="28" fill="rgba(119, 168, 247, 0.1)" font-size="1rem" font-family="monospace">100101010110011010100101010110100110110111</text>
+  <text x="0" y="56" fill="rgba(130, 250, 192, 0.1)" font-size="1rem" font-family="monospace">010010110101001010101001101010101010100100</text>
+  <text x="0" y="84" fill="rgba(119, 168, 247, 0.1)" font-size="1rem" font-family="monospace">011100011010110111010110101010100010101100</text>
+  <text x="0" y="112" fill="rgba(130, 250, 192, 0.1)" font-size="1rem" font-family="monospace">010010101101010110101110011010100101010110</text>
+</svg>

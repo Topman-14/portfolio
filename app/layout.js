@@ -1,7 +1,7 @@
 import { Suspense } from 'react'
 import './globals.css'
 import { Gabarito } from 'next/font/google'
-import Loading from './Loading'
+import Loading from './loading'
 
 const gabarito = Gabarito({ subsets: ['latin'] })
 

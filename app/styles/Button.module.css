@@ -1,13 +1,3 @@
-/* .btn{
-    padding: 15px 25px;
-    border-radius: 10px;
-    background: linear-gradient(90deg, rgba(200,241,153,1) 0%, rgba(0,212,255,1) 100%);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: black;
-    font-size: 1.2em;
-} */
 .btnDark{
     transition: 0.2s ease;
     padding: 15px 25px;
@@ -16,7 +6,7 @@
     border: 3px solid transparent;
     width: fit-content;
     position: relative;
-    background: linear-gradient(#121212, #121212) padding-box,linear-gradient(to right, rgba(200,241,153,1) , rgba(0,212,255,1) 100%) border-box;
+    background: linear-gradient(#010e1b, #010e1b) padding-box,linear-gradient(to right, rgba(200,241,153,1) , rgba(0,212,255,1) 100%) border-box;
 }
 .btnDark:hover{
     scale: 1.05;
@@ -26,7 +16,6 @@
     padding: 15px 25px;
     border-radius: 10px;
     font-size: 1.2em;
-    border: 2px solid transparent;
     width: fit-content;
     position: relative;
     background:transparent;

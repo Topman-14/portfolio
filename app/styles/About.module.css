@@ -1,0 +1,11 @@
+.aboutText{
+    width: clamp(200px, 50%, 800px);
+}
+.aboutText > span{
+    margin: 10px 0;
+    display: flex;
+}
+.subHeading{
+    margin: -50px 0 30px 0;
+    font-size: 2em;
+}
