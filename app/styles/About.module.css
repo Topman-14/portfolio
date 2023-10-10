@@ -1,7 +1,7 @@
 .aboutText{
     width: clamp(200px, 50%, 800px);
 }
-.aboutText > span{
+.aboutText span{
     margin: 10px 0;
     display: flex;
 }

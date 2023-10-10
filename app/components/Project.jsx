@@ -21,7 +21,7 @@ export default function Project({isDarkMode, isLeft, project}) {
         <div className={styles.projectImg}>
             <Link href={project.link} target='_blank'>
                 <div className={isDarkMode? styles.imgOverlay : styles.imgOverlayWhite}></div>
-                <Image src="/images/fantastick.png" height={300} width={500} alt='Preview of Fantastick homepage' priority={true}></Image>
+                <Image src={project.image} height={300} width={500} alt='Preview of Fantastick homepage' priority={true}></Image>
             </Link>
         </div>
         <div className={styles.projectText}>
@@ -37,14 +37,15 @@ export default function Project({isDarkMode, isLeft, project}) {
             <div className={styles.projectStack} style={isLeft? {justifyContent: "flex-start"} : {justifyContent:"flex-end"}}>
                 {project.stack.map(item => <p key={uuidv4()}>{item}</p>)}
             </div>
-            
+
             <div className={styles.projectLinks} style={isLeft? {justifyContent: "flex-start"} : {justifyContent:"flex-end"}}>
                 <Link href={project.github} target='_blank'>
                     <FiGithub />
                 </Link>
-                <Link href={project.link} target='_blank'>
+                {project.link && <Link href={project.link} target='_blank'>
                     <FiExternalLink />
                 </Link>
+                }
             </div>
         </div>
     </article>

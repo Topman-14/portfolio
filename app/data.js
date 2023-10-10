@@ -1,48 +1,48 @@
 const projects = [
     {
-        id:"1",
-        title:"FantasTick - A productivity app",
-        description:"A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on blahh blahh blahh",
-        stack:["React", "Vite", "Express", "Node", "MongoDB"],
+        id:1,
+        title:"FantasTick - Productivity app",
+        description:"A vibrant productivity app with CRUD functionalities and a user-friendly interface. Signup, add tasks with detailed descriptions, edit a task, tick it off or delete it.",
+        stack:["React", "Vite", "Vercel", "Express", "Node", "MongoDB Atlas"],
         image:"/images/fantastick.png",
-        github:"https://github.com",
+        github:"https://github.com/Topman-14/FantasTick",
         link:"https://fantastick.vercel.app"
     },
     {
-        id:"2",
-        title:"FantasTick",
-        description:"A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on blahh blahh blahh",
-        stack:["React", "Vite", "Express", "Node", "MongoDB"],
-        image:"/images/something.png",
-        github:"https://github.com",
-        link:"https://fantastick.vercel.app"
+        id:2,
+        title:"InfoHub - News website",
+        description:"The go-to place for fresh headlines and instant global updates. Stay updated with the hottest news and unfolding events in each category.",
+        stack:["Vanilla JS", "Netlify", "NewsData API", "CSS3"],
+        image:"/images/infohub.png",
+        github:"https://github.com/Topman-14/InfoHub",
+        link:"https://info-hub.netlify.app/"
     },
     {
-        id:"3",
-        title:"FantasTick",
-        description:"A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on blahh blahh blahh",
-        stack:["React", "Vite", "Express", "Node", "MongoDB"],
-        image:"/images/something.png",
-        github:"https://github.com",
-        link:"https://fantastick.vercel.app"
+        id:3,
+        title:"TU Counsel - Counselling website",
+        description:"A counseling system I contributed to, designed to offer accessible and convenient services to students through web-based resources, live chat, and appointment booking options.",
+        stack:["Django", "Sqlite", "JavaScript", "YouTube API", "Google Calender API"],
+        image:"/images/tucounsel.png",
+        github:"https://github.com/YoungAli/Real-counselling",
+        link:""
     },
     {
-        id:"4",
-        title:"FantasTick",
-        description:"A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on blahh blahh blahh",
-        stack:["React", "Vite", "Express", "Node", "MongoDB"],
-        image:"/images/something.png",
-        github:"https://github.com",
-        link:"https://fantastick.vercel.app"
+        id:4,
+        title:"StudyArchives - Landing page",
+        description:"Landing page for an extensive collection of past exam papers, meticulously gathered from diverse subjects and academic levels.",
+        stack:["React", "Next.js", "Tailwind CSS", "Vercel", "MUI icons"],
+        image:"/images/studyarchives.png",
+        github:"https://github.com/Topman-14/StudyArchives",
+        link:"https://study-archives.vercel.app"
     },
     {
-        id:"5",
-        title:"FantasTick",
-        description:"A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on blahh blahh blahh",
-        stack:["React", "Vite", "Express", "Node", "MongoDB"],
-        image:"/images/something.png",
-        github:"https://github.com",
-        link:"https://fantastick.vercel.app"
+        id:5,
+        title:"Tesla.com Clone",
+        description:"A clone of Tesla's old landing page, revamped in my own way, with a newsletter form at the bottom",
+        stack:["Javascript", "CSS3", "HTML5"],
+        image:"/images/teslaclone.jpg",
+        github:"https://github.com/Topman-14/Side-Hustle-Tasks",
+        link:"https://topman-tesla-clone.netlify.app/"
     }
 ]
 
@@ -121,6 +121,4 @@ const ingredients = [
     }
 ];
 
-module.exports = {
-    projects, ingredients
-}
+module.exports = { projects, ingredients }
