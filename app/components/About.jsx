@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from '../styles/About.module.css'
 import Tile from './Tile'
+import { ingredients } from '../data'
+import { v4 as uuidv4 } from 'uuid';
 
 export default function ({darkMode}) {
   return (
@@ -14,8 +16,8 @@ export default function ({darkMode}) {
           </p>
           <div className='w-[50%]'>
             <h4 className={styles.subHeading}>Ingredients</h4>
-            <div className='flex flex-wrap gap-3 justify-center'>
-              {<Tile isDarkMode={darkMode}/> } 
+            <div className='flex flex-wrap gap-3 justify-end'>
+              {ingredients.map(item => <Tile isDarkMode={darkMode} item={item} key={uuidv4()} />) } 
             </div>
           </div>
         </div>

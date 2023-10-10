@@ -53,11 +53,11 @@ const ingredients = [
     },
     {
         title: "Illustrator",
-        icon: "URL_to_illustrator_icon"
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
     },
     {
         title: "Figma",
-        icon: "URL_to_figma_icon"
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
     },
     {
         title: "CorelDraw",
@@ -65,53 +65,62 @@ const ingredients = [
     },
     {
         title: "React",
-        icon: "URL_to_react_icon"
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
     },
     {
         title: "Next",
-        icon: "URL_to_next_icon"
-    },
-    {
-        title: "Express",
-        icon: "URL_to_express_icon"
-    },
-    {
-        title: "SQL",
-        icon: "URL_to_sql_icon"
-    },
-    {
-        title: "HTML",
-        icon: "URL_to_html_icon"
-    },
-    {
-        title: "CSS",
-        icon: "URL_to_css_icon"
-    },
-    {
-        title: "JavaScript",
-        icon: "URL_to_javascript_icon"
-    },
-    {
-        title: "TypeScript",
-        icon: "URL_to_typescript_icon"
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
     },
     {
         title: "Angular",
-        icon: "URL_to_angular_icon"
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
     },
     {
-        title: "MongoDB",
-        icon: "URL_to_mongodb_icon"
-    },
-    {
-        title: "Vite",
-        icon: "URL_to_vite_icon"
+        title: "Express",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
     },
     {
         title: "Node.js",
-        icon: "URL_to_nodejs_icon"
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+    },
+    {
+        title: "HTML",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+    },
+    {
+        title: "CSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+    },
+    {
+        title: "TailwindCSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+    },
+    {
+        title: "JavaScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+    },
+    {
+        title: "TypeScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+    },
+    {
+        title: "PHP",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+    },
+    {
+        title: "MongoDB",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+    },
+    {
+        title: "PostgreSQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+    },
+    {
+        title: "WordPress",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"
     }
-    // Add more technologies as needed
 ];
 
-export default projects
+module.exports = {
+    projects, ingredients
+}

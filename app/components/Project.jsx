@@ -8,7 +8,7 @@ import { v4 as uuidv4 } from 'uuid';
 export default function Project({isDarkMode, isLeft, project}) {
 
     const projectDescStyle = {
-        color: isDarkMode ? "#bbb" : "#9a9a9a",
+        color: isDarkMode ? "#bbb" : "rgb(87, 86, 86)",
         background: isDarkMode ? "#313131ad" : "#ffffff54",
         border: isDarkMode ? "" : "1px solid #a1a1a1",
         textAlign: isLeft ? "left" : "right",
@@ -25,11 +25,19 @@ export default function Project({isDarkMode, isLeft, project}) {
             </Link>
         </div>
         <div className={styles.projectText}>
-            <h4 className={styles.projectName} style={isLeft? {textAlign:"left"} : {textAlign:"right"}}>{project.title}</h4>
-            <p className={styles.projectDesc} style={projectDescStyle}>{project.description}</p>
+
+            <h4 className={styles.projectName} style={isLeft? {textAlign:"left"} : {textAlign:"right"}}>
+                {project.title}
+            </h4>
+
+            <p className={styles.projectDesc} style={projectDescStyle}>
+                {project.description}
+            </p>
+
             <div className={styles.projectStack} style={isLeft? {justifyContent: "flex-start"} : {justifyContent:"flex-end"}}>
                 {project.stack.map(item => <p key={uuidv4()}>{item}</p>)}
             </div>
+            
             <div className={styles.projectLinks} style={isLeft? {justifyContent: "flex-start"} : {justifyContent:"flex-end"}}>
                 <Link href={project.github} target='_blank'>
                     <FiGithub />
