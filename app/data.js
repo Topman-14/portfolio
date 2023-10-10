@@ -60,10 +60,6 @@ const ingredients = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
     },
     {
-        title: "CorelDraw",
-        icon: "URL_to_coreldraw_icon"
-    },
-    {
         title: "React",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
     },

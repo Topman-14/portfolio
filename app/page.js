@@ -4,6 +4,7 @@ import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import Projects from './components/Projects.jsx'
 import About from './components/About.jsx'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(true)

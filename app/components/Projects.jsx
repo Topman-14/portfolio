@@ -10,7 +10,7 @@ export default function Projects({darkMode}) {
     <div className='flex flex-col items-center gap-[200px] mt-28'>
       {projects.map(project => <Project isDarkMode={darkMode} isLeft={project.id % 2} project={project} key={uuidv4()} />)}
     </div>
-    <h3 style={darkMode? {color: "#444"} : {color:"#c5c5c5"}}>{"}"}</h3>
+    <h3 style={darkMode? {color: "#444"} : {color:"#c5c5c5"}} className='bottom_curly_brace'>{"}"}</h3>
    </section>
   )
 }
