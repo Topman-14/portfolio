@@ -19,7 +19,7 @@ const projects = [
     },
     {
         id:3,
-        title:"TU Counsel - Counselling website",
+        title:"TU Counsel - Counselling App",
         description:"A counseling system I contributed to, designed to offer accessible and convenient services to students through web-based resources, live chat, and appointment booking options.",
         stack:["Django", "Sqlite", "JavaScript", "YouTube API", "Google Calender API"],
         image:"/images/tucounsel.png",

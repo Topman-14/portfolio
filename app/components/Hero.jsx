@@ -19,7 +19,7 @@ function Hero({darkMode}) {
               From implementing user interfaces to optimizing backend systems, 
               I take pride in delivering top-notch software that exceeds expectations 🚀. 
             </p>
-            <Link href={"/Resume_Akinkuade_Temitope.docx.pdf"} download="Resume-Topman" target="_blank" rel="noreferrer">
+            <Link href={"/Resume_Akinkuade_Temitope.pdf"} target="_blank" rel="noreferrer">
               <Button isFilled={true} text={"Download Resume"} icon={"download"} isDarkMode={darkMode}/>
             </Link>
           </div>
