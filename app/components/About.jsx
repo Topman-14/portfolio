@@ -4,7 +4,7 @@ import Tile from './Tile'
 import { ingredients } from '../data'
 import { v4 as uuidv4 } from 'uuid';
 import Link from 'next/link';
-import Head from 'next/head';
+import { BsGithub, BsLinkedin, BsFillEnvelopeAtFill } from "react-icons/bs";
 
 export default function ({darkMode}) {
   return (
@@ -19,18 +19,18 @@ export default function ({darkMode}) {
             </p>
             <div className={styles.links}>
               <Link href={"https://github.com/Topman-14"} target='_blank'>
-                <i class="bi bi-github"></i>
+                <BsGithub />
               </Link>
               <Link href={"https://www.linkedin.com/in/tope-akinkuade"} target='_blank'>
-                <i class="bi bi-linkedin"></i>
+                <BsLinkedin />
               </Link>
               <Link href={"mailto:talktotimothy101@gmail.com?body=Hey%2C%20I%20saw%20your%20portfolio%20online%2C%20and%20I'd%20like%20to..."}>
-                <i class="bi bi-envelope-at-fill"></i>
+                <BsFillEnvelopeAtFill />
               </Link>
             </div>
           </div>
           <div className={styles.aboutText}>
-            <h4 className={styles.subHeading}>Ingredients</h4>
+            <h4 className={styles.subHeading}>Languages & Tools</h4>
             <div className='flex flex-wrap gap-3 justify-end'>
               {ingredients.map(item => <Tile isDarkMode={darkMode} item={item} key={uuidv4()} />) } 
             </div>

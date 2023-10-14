@@ -4,7 +4,7 @@ import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import Projects from './components/Projects.jsx'
 import About from './components/About.jsx'
-import 'bootstrap-icons/font/bootstrap-icons.css'
+import Contact from './components/Contact.jsx'
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(true)
@@ -19,6 +19,7 @@ export default function Home() {
         <Hero darkMode={isDarkMode}/>
         <About darkMode={isDarkMode} />
         <Projects darkMode={isDarkMode} />
+        <Contact darkMode={isDarkMode}/>
       </div>
     </main>
   )

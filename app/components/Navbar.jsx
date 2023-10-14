@@ -30,13 +30,13 @@ function Navbar({handleClick, darkMode}) {
   return (
     <header className={darkMode? styles.headerDark : styles.header} style={{top: visible ? '0' : '-120px'}}>
       <nav className='flex justify-between items-center w-full px-14 py-[2rem]'>
-        <Link href={"/"} className={orbitron.className}>
+        <Link href={"#"} className={orbitron.className}>
           <h1 className={styles.logo}>Topman</h1>
         </Link>
         <ul className="flex w-2/6 justify-between text-lg">
           <Link href={"#about"}><li className={styles.navUlItems}>About</li></Link>
           <Link href={"#projects"}><li className={styles.navUlItems}>Projects</li></Link>
-          <Link href={"#"}><li className={styles.navUlItems}>Contact</li></Link>
+          <Link href={"#contact"}><li className={styles.navUlItems}>Contact</li></Link>
           <li className='flex items-center text-2xl mr-10 cursor-pointer' onClick={handleClick}> {darkMode ?  <LuSunMedium /> : <LuMoon /> }</li>
         </ul>
       </nav>
