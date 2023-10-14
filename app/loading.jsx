@@ -10,7 +10,7 @@ function Loading() {
         <Image src={"/images/loader.png"} alt='Image of Layi holding cooking utensils' width={300} height={200} priority={true} />
       </div>
       <div className={styles.loaderMsg}>
-      <img src="/loader.svg" />
+      <Image src="/loader.svg" height={50} width={50} alt=''/>
       <p>Cooking...</p>
       {/* 😤 */}
       </div>

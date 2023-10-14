@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Link from 'next/link';
 import { BsGithub, BsLinkedin, BsFillEnvelopeAtFill } from "react-icons/bs";
 
-export default function ({darkMode}) {
+export default function About ({darkMode}) {
   return (
     <section className='wrapper' style={darkMode? {color:"#e1e1e1"} : {color: "#333"}} id="about">
         <h3>About Me✌️<span style={darkMode? {color: "#444"} : {color:"#c5c5c5"}}>{"() {"}</span></h3>
