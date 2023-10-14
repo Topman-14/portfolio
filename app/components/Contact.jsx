@@ -4,6 +4,7 @@ import Contactform from './Contactform'
 import Link from 'next/link'
 import { BsGithub, BsEnvelopeAtFill, BsLinkedin, BsArrowRight } from 'react-icons/bs'
 import { FaSquareXTwitter } from 'react-icons/fa6'
+import Image from 'next/image'
 
 function selectIcon(iconName){
   return (iconName == "Gmail") ? <BsEnvelopeAtFill /> : (iconName == "Github") ? <BsGithub /> : (iconName == "LinkedIn") ? <BsLinkedin /> : <FaSquareXTwitter />
@@ -30,7 +31,7 @@ export default function Contact({darkMode}) {
   ]
   return (
     <section className='wrapper' style={darkMode? {color:"#e1e1e1"} : {color: "#333"}} id="contact">
-      <h3>Let's talk 😊</h3>
+      <h3>Contact Me 😊</h3>
       <div className={styles.contactContainer}>
         {contactInfo.map(obj => {
           return(
@@ -44,8 +45,12 @@ export default function Contact({darkMode}) {
           )
         })}
       </div>
-      <h3>Contact Form</h3>
-      <Contactform isDarkMode={darkMode} />
+      <h3 style={{marginBottom: "5px"}}>Feel free to ask questions!</h3>
+      <p style={{marginBottom: "80px"}} >I usually reply in a few hours</p>
+      <div className={styles.contactFormContainer}>
+        <Image src={"/images/contact.gif"} height={300} width={400} priority={true} alt='pawpaw business meme'/> 
+        <Contactform isDarkMode={darkMode} />
+      </div>
     </section>
   )
 }

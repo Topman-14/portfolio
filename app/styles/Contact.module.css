@@ -15,20 +15,52 @@
     font-size: 1.5em;
 }
 .formInput {
-    width: 50%;
+    width: 100%;
     resize: none;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 600;
-    color: #4a5568; /* You can change the color as needed */
-    border-bottom: 2px solid transparent; /* You can change the color as needed */
+    color: #4a5568;
+    border-bottom: 2px solid transparent; 
     outline: none;
     transition: 0.2s;
+    background: #fff;
+}
+.formInputDark{
+    width: 100%;
+    resize: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #dee2eb; 
+    border-bottom: 2px solid transparent; 
+    outline: none;
+    transition: 0.2s;
+    background: #1e293b;
+}
+.formInput:focus {
+      border-bottom: 2px solid #596370; 
+}
+.formInputDark:focus {
+      border-bottom: 2px solid #13eeb3; 
+}
+.contactFormContainer{
+    display: flex;
+    gap: 26px;
+    justify-content: space-between;
+    margin-bottom: 60px;
 }
 
-/* Adding focus styling */
-.formInput:focus {
-      border-bottom: 2px solid #596370; /* You can change the color as needed */
-    
-  }
+.contactFormContainer img {
+    width: clamp(250px, 50%, 600px);
+    height: auto;
+    object-fit: contain;
+    object-position: top;
+
+}
+
+.contactFormContainer form {
+width: clamp(250px, 60%, 800px);
+}

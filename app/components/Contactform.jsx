@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import styles  from '../styles/Contact.module.css'
+import { BsSend } from 'react-icons/bs';
 
-const Contactform = (isDarkMode) => {
+const Contactform = ({isDarkMode}) => {
   const { register, handleSubmit } = useForm();
   const [isLoading, setIsLoading] = useState(false);
 
@@ -32,6 +33,7 @@ const Contactform = (isDarkMode) => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
+     
       <div className='mb-5'>
         <label
           htmlFor='email'
@@ -40,29 +42,34 @@ const Contactform = (isDarkMode) => {
           Email Address
         </label>
         <input
+          id='email'
+          autoComplete={"true"}
+          required
           type='email'
           placeholder='example@domain.com'
-          className={styles.formInput}
-          {...register('email', { required: 'Email is required' })}
+          className={isDarkMode? styles.formInputDark : styles.formInput}
+          {...register('email', { required: true })}
         />
       </div>
       <div className='mb-5'>
         <label
           htmlFor='message'
           className='mb-3 block text-base font-medium'
-        >
+        >Message
           Message
         </label>
         <textarea
-          rows={4}
+          id='message'
+          rows={10}
           placeholder='Type your message'
-          className={styles.formInput}
-          {...register('message', { required: 'Message is required' })}
+          className={isDarkMode? styles.formInputDark : styles.formInput}
+          required
+          {...register('message', { required: true })}
         ></textarea>
       </div>
-      <div>
-        <button className='hover:shadow-form rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-white outline-none'>
-          Submit
+      <div className='flex justify-end'>
+        <button className='hover:scale-105 bg-[#3077ae] py-3 px-8 text-xl transition-transform font-semibold text-white outline-none'>
+          Send Message
         </button>
       </div>
     </form>
