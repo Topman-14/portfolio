@@ -7,7 +7,7 @@ function Button({text, icon, isDarkMode}) {
     <button className={isDarkMode? styles.btnDark : styles.btn}>
       <div className={isDarkMode ? styles.text : styles.textLight}>
         <p>{text}</p>
-        {icon == "download" ? <FiDownload /> : <FiArrowRight />}
+        {icon && icon == "download" ? <FiDownload /> : <FiArrowRight />}
       </div>
     </button>
   )

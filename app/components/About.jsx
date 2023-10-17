@@ -15,7 +15,7 @@ export default function About ({darkMode}) {
             <p>
               Hey there!, I'm Temitope Akinkuade, a Software Engineer based in Lagos, Nigeria. <span> Call me Topman for short. </span> My journey began a few years ago, as a graphic artist, inspired by my mother, a brand designer. <br />Along the way, I ventured into the world of web development, mastering fundamental languages and technologies.
               <span></span>
-              Now, I'm an avid explorer of a variety of JavaScript frameworks, including Angular, React, Express, Next, and more. My passion lies in cooking dynamic and engaging web experiences that seamlessly blend design and functionality for value.
+              Now, I'm an avid explorer of a variety of JavaScript frameworks, including Angular, React, Express, Next, and more. My passion lies in cooking dynamic and engaging web experiences that seamlessly blend design, functionality and value.
             </p>
             <div className={styles.links}>
               <Link href={"https://github.com/Topman-14"} target='_blank'>

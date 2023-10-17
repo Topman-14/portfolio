@@ -13,20 +13,19 @@ function Hero({darkMode}) {
             <h2 className={styles.name} style={darkMode? {color: "#fff"} : {color: "#333"}}>Tope Akinkuade</h2>
             <h2 className={styles.descBig}>I build Web Applications</h2>
             <p className={styles.descLittle} style={darkMode? {color: "#fff"} : {color: "#222"}}>
-              I'm a Software Engineer specializing in crafting exemplary digital experiences. 
+              I'm a Software Engineer specialized in crafting exceptional digital experiences. 
               <br />
               From implementing user interfaces to optimizing backend systems, 
-              I take pride in delivering top-notch software that exceeds expectations 🚀. 
+              I take pride in delivering top-notch software that exceeds expectations 🚀
             </p>
-            <Link href={"/Resume_Akinkuade_Temitope.pdf"} target="_blank" rel="noreferrer">
-              <Button isFilled={true} text={"Download Resume"} icon={"download"} isDarkMode={darkMode}/>
+            <Link href={"/resume.pdf"} target="_blank" rel="noreferrer">
+              <Button isFilled={true} text="View Resume" isDarkMode={darkMode}/>
             </Link>
           </div>
           <div>
             <div className={styles.heroImg}>
+              {/* <div className={styles.heroImgBase} style={darkMode? {background:"linear-gradient(90deg, rgba(200,241,153,1) 0%, rgba(0,212,255,1) 100%)"}: {background:"black"}}> */}
               <Image src={"/images/me.png"} height={200} width={300} alt='An image of me - Topman' priority={true}/>
-              <div className={styles.heroImgBase} style={darkMode? {background:"linear-gradient(90deg, rgba(200,241,153,1) 0%, rgba(0,212,255,1) 100%)"}: {background:"black"}}>
-            </div>
             </div>
           </div>
       </section>

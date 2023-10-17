@@ -11,10 +11,10 @@ html{
   min-height: 100vh;
 }
 .wrapper > h3{
-  font-size: 2.8em;
+  font-size: 2.5em;
   font-weight: 600;
-  margin-bottom: 50px;
-  margin-top: 130px;
+  margin-bottom: 40px;
+  margin-top: 90px;
 }
 .bottom_curly_brace{
   margin-top: 10px !important;

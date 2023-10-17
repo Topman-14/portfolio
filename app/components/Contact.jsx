@@ -31,7 +31,7 @@ export default function Contact({darkMode}) {
   ]
   return (
     <section className='wrapper' style={darkMode? {color:"#e1e1e1"} : {color: "#333"}} id="contact">
-      <h3>Contact Me 😊</h3>
+      <h3>Contact Me 📫</h3>
       <div className={styles.contactContainer}>
         {contactInfo.map(obj => {
           return(
@@ -45,10 +45,10 @@ export default function Contact({darkMode}) {
           )
         })}
       </div>
-      <h3 style={{marginBottom: "5px"}}>Feel free to ask questions!</h3>
-      <p style={{marginBottom: "80px"}} >I usually reply in a few hours</p>
+      <h4 className='mt-[50px] mb-[30px] text-2xl font-semibold'>Feel free to ask questions!</h4>
+      <p className='pb-[20px] px-[50px]' >I usually reply in a few hours</p>
       <div className={styles.contactFormContainer}>
-        <Image src={"/images/contact.gif"} height={300} width={400} priority={true} alt='pawpaw business meme'/> 
+        <Image src={"/images/contact.jpg"} height={300} width={400} priority={true} alt='pawpaw business meme'/> 
         <Contactform isDarkMode={darkMode} />
       </div>
     </section>

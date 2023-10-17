@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main style={isDarkMode? {background: "#010e1b"} : {background: "#e1e1e1"}}> 
     {/* previous bg color -- "#121212" */}
-      <div className="flex flex-col min-h-screen container mx-auto relative px-5">
+      <div className="flex flex-col min-h-screen container mx-auto relative px-5 max-w-[1200px]">
         <Navbar darkMode={isDarkMode} handleClick={toggleTheme}/>
         <Hero darkMode={isDarkMode}/>
         <About darkMode={isDarkMode} />

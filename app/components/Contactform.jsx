@@ -10,20 +10,21 @@ const Contactform = ({isDarkMode}) => {
   function sendEmail(data) {
     const apiEndpoint = '/api/email';
     setIsLoading(true);
+    console.log(data.email)
   
-    fetch(apiEndpoint, {
-      method: 'POST',
-      body: JSON.stringify(data),
-    })
-      .then((res) => res.json())
-      .then((response) => {
-        alert(response.message);
-      })
-      .catch((err) => {
-        alert(err);
-      }).finally(() => {
-        setIsLoading(false);
-      });
+    // fetch(apiEndpoint, {
+    //   method: 'POST',
+    //   body: JSON.stringify(data),
+    // })
+    //   .then((res) => res.json())
+    //   .then((response) => {
+    //     alert(response.message);
+    //   })
+    //   .catch((err) => {
+    //     alert(err);
+    //   }).finally(() => {
+    //     setIsLoading(false);
+    //   });
   }
 
 
@@ -55,7 +56,7 @@ const Contactform = ({isDarkMode}) => {
         <label
           htmlFor='message'
           className='mb-3 block text-base font-medium'
-        >Message
+        >
           Message
         </label>
         <textarea
@@ -68,7 +69,7 @@ const Contactform = ({isDarkMode}) => {
         ></textarea>
       </div>
       <div className='flex justify-end'>
-        <button className='hover:scale-105 bg-[#3077ae] py-3 px-8 text-xl transition-transform font-semibold text-white outline-none'>
+        <button disabled={isLoading} style={{cursor: isLoading? "wait" : "pointer"}} className='hover:scale-105 bg-[#3077ae] py-2 px-6 text-md transition-transform font-semibold text-white outline-none'>
           Send Message
         </button>
       </div>
