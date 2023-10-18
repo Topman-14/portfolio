@@ -1,0 +1,11 @@
+.navWrapper{
+    position: sticky;
+    bottom: 0px;
+    padding: 8px 16px;
+    backdrop-filter: blur(4px);
+}
+@media (min-width: 640px) {
+    .navWrapper{
+        display: none;
+    }
+}

@@ -46,7 +46,7 @@ export default function Contact({darkMode}) {
         })}
       </div>
       <h4 className='mt-[50px] mb-[30px] text-2xl font-semibold'>Feel free to ask questions!</h4>
-      <p className='pb-[20px] px-[50px]' >I usually reply in a few hours</p>
+      <p className={styles.ptag} >I usually reply in a few hours</p>
       <div className={styles.contactFormContainer}>
         <Image src={"/images/contact.jpg"} height={300} width={400} priority={true} alt='pawpaw business meme'/> 
         <Contactform isDarkMode={darkMode} />

@@ -25,3 +25,34 @@
 .links svg:hover{
     scale: 1.1;
 }
+.aboutTextContainer{
+    display: flex;
+    gap: 56px;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+@media (max-width: 1024px) {
+    .aboutTextContainer{
+        flex-direction: column;
+        align-items: center;
+        gap: 85px;
+    }
+    .aboutText{
+        width: 95%;
+        max-width: 800px;
+        font-size: 1em;
+    }
+}
+@media (max-width: 640px){
+    .links{
+        justify-content: center;
+        gap: 35px;
+    }
+    .subHeading{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .subHeading + div{
+        justify-content: center;
+    }
+}

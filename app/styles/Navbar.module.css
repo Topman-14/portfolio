@@ -7,6 +7,12 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.logoLight{
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    color: #248ba5;
+}
 .navUlItems{
     padding: 5px 3px;
     position: relative;
@@ -48,4 +54,25 @@
     position: sticky;
     top: 0;
     z-index: 999;
+  }
+  .navItemWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+  }
+  
+  @media (max-width: 640px) {
+    .navUlItems{
+      display: none;
+    }
+    .navItemWrapper{
+      width: 0;
+    }
+    .header, .headerDark{
+      margin: 0 -20px;
+    }
+    .header > nav, .headerDark > nav{
+      justify-content: center;
+      gap: 40px;
+    }
   }

@@ -10,7 +10,7 @@ export default function About ({darkMode}) {
   return (
     <section className='wrapper' style={darkMode? {color:"#e1e1e1"} : {color: "#333"}} id="about">
         <h3>About Me✌️<span style={darkMode? {color: "#444"} : {color:"#c5c5c5"}}>{"() {"}</span></h3>
-        <div className='flex gap-14 justify-between'>
+        <div className={styles.aboutTextContainer}>
           <div className={styles.aboutText}>
             <p>
               Hey there!, I'm Temitope Akinkuade, a Software Engineer based in Lagos, Nigeria. <span> Call me Topman for short. </span> My journey began a few years ago, as a graphic artist, inspired by my mother, a brand designer. <br />Along the way, I ventured into the world of web development, mastering fundamental languages and technologies.
@@ -30,7 +30,7 @@ export default function About ({darkMode}) {
             </div>
           </div>
           <div className={styles.aboutText}>
-            <h4 className={styles.subHeading}>Languages & Tools</h4>
+            <h4 className={styles.subHeading}>My Ingredients 👨‍🍳</h4>
             <div className='flex flex-wrap gap-3 justify-end'>
               {ingredients.map(item => <Tile isDarkMode={darkMode} item={item} key={uuidv4()} />) } 
             </div>

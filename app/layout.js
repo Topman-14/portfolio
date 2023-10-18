@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={gabarito.className} suppressHydrationWarning={true}>
+      <body className={gabarito.className}>
         <Suspense fallback={<Loading />}>
           {children}
         </Suspense>
