@@ -9,6 +9,7 @@
 }
 .heroText{
     width: 62%;
+    animation: fadeUp 1s;
 }
 .heroText p:first-child{
     font-size: 1.3rem;
@@ -35,14 +36,28 @@
 }
 .heroImg{
     position: relative;
+    animation: fadeUp 1s;
+    box-shadow: 20px 20px 90px 10px #00aeff4d, 0 0 8px rgba(0, 0, 0, 0.197);
+    border-radius: 100px;
 }
 .heroImg img{
     /* overflow: hidden; */
-    width: 300px;
-    height                                                                                                                    : 400px;
+    width: clamp(250px, auto, 350px);
+    height: 400px;
     z-index: 70;
     clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
     object-fit: cover;
+}
+
+@keyframes fadeUp {
+    0%{
+        opacity: 0.2;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 @media (max-width: 1024px) {
     .main{

@@ -4,7 +4,9 @@
 
 
 html{
-    scroll-behavior: smooth;      
+    scroll-behavior: smooth;
+    background: #010e1b;
+    -webkit-tap-highlight-color: transparent;
 }
 .wrapper{
   padding: 20px 0;

@@ -76,8 +76,8 @@
 
 @media (max-width:1024px) {
     .projectWrapper{
-        flex-direction: column-reverse !important;
-        gap: 18px;
+        flex-direction: column !important;
+        gap: 25px;
         align-items: center;
     }
     .projectText{

@@ -101,7 +101,7 @@ width: clamp(0px, 60%, 800px);
     .contactFormContainer{
         flex-direction: column-reverse;
         align-items: center;
-        gap: 80px;
+        gap: 150px;
     }
     .contactFormContainer form{
         width: 100%;

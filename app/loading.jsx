@@ -1,21 +1,28 @@
-import React from 'react'
-import styles from './styles/Loading.module.css'
-import Image from 'next/image'
+"use client"
+import React from 'react';
+import styles from './styles/Loading.module.css';
+import Image from 'next/image';
+import { AnimatePresence, motion } from 'framer-motion';
 
 function Loading() {
-  
   return (
-    <div className={styles.container}>
+    <AnimatePresence mode='wait'>
+    <motion.div
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 0 }}
+      className={styles.container}
+    >
       <div className={styles.loaderImg}>
-        <Image src={"/images/loader.png"} alt='Image of Layi holding cooking utensils' width={200} height={150} priority={true} />
+        <Image src="/images/loader.png" alt="Image of Layi holding cooking utensils" width={200} height={150} priority={true} />
       </div>
       <div className={styles.loaderMsg}>
-      <Image src="/loader.svg" height={50} width={50} alt=''/>
-      <p>Cooking...</p>
-      {/* 😤 */}
+        <Image src="/loader.svg" height={50} width={50} alt="" />
+        <p>Cooking...</p>
+        {/* 😤 */}
       </div>
-    </div>
-  )
+    </motion.div>
+  </AnimatePresence>
+  );
 }
 
-export default Loading
+export default Loading;
