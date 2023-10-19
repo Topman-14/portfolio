@@ -47,7 +47,7 @@
 @media (max-width: 1024px) {
     .main{
         flex-direction: column;
-        gap: 60px;
+        gap: 100px;
         margin: 60px 20px;
         height: fit-content;
     }
