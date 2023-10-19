@@ -80,6 +80,13 @@ width: clamp(0px, 60%, 800px);
     color: rgb(39, 39, 39);
     border-radius: 1px;
 }
+.sendBtnArea{
+    display: flex;
+    justify-content: flex-end;
+}
+.sendBtnArea img{
+    height: 30px;
+}
 
 @media (max-width: 640px){
     .contactContainer{
