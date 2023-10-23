@@ -1,8 +1,9 @@
 .navWrapper{
-    position: sticky;
+    position: fixed;
     bottom: 0px;
     padding: 8px 0;
     backdrop-filter: blur(4px);
+    width: 100vw;
 }
 
 .navUlItems{
