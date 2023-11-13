@@ -53,14 +53,13 @@
     justify-content: space-between;
     margin-bottom: 100px;
     padding: 0 50px;
+    height: 400px;
 }
 
 .contactFormContainer img {
     width: clamp(250px, 50%, 600px);
-    height: auto;
-    object-fit: contain;
-    object-position: top;
-
+    height: 100%;
+    object-fit: cover;
 }
 .contactFormContainer form {
 width: clamp(0px, 60%, 800px);
@@ -85,7 +84,7 @@ width: clamp(0px, 60%, 800px);
     justify-content: flex-end;
 }
 .sendBtnArea img{
-    height: 30px;
+    height: 100%;
 }
 
 @media (max-width: 640px){
