@@ -4,7 +4,7 @@ import styles from './styles/Loading.module.css';
 import Image from 'next/image';
 import { AnimatePresence, motion } from 'framer-motion';
 
-function Loading() {
+function Preloader() {
   return (
     <AnimatePresence mode='wait'>
     <motion.div
@@ -25,4 +25,4 @@ function Loading() {
   );
 }
 
-export default Loading;
+export default Preloader;
