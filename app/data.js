@@ -10,24 +10,15 @@ const projects = [
     },
     {
         id:2,
-        title:"InfoHub - News website",
-        description:"The go-to place for fresh headlines and instant global updates. Stay updated with the hottest news and unfolding events in each category.",
-        stack:["Vanilla JS", "Netlify", "NewsData API", "CSS3"],
-        image:"/images/infohub.png",
-        github:"https://github.com/Topman-14/InfoHub",
-        link:"https://info-hub.netlify.app/"
+        title:"ScholarPro - Desktop LMS",
+        description:"A comprehensive LMS that provides an efficient and user-friendly platform for educational institutions, instructors, and students to interact and collaborate.",
+        stack:["C#", "Visual Studio", "MySQL", "XAMPP"],
+        image:"/images/scholar_pro.jpg",
+        github:"https://github.com/Topman-14/ScholarPro",
+        
     },
     {
         id:3,
-        title:"TU Counsel - Counselling App",
-        description:"A counseling system I contributed to, designed to offer accessible and convenient services to students through web-based resources, live chat, and appointment booking options.",
-        stack:["Django", "Sqlite", "JavaScript", "YouTube API", "Google Calender API"],
-        image:"/images/tucounsel.png",
-        github:"https://github.com/YoungAli/Real-counselling",
-        link:""
-    },
-    {
-        id:4,
         title:"StudyArchives - Landing page",
         description:"Landing page for an extensive collection of past exam papers, meticulously gathered from diverse subjects and academic levels.",
         stack:["React", "Next.js", "Tailwind CSS", "Vercel", "MUI icons"],
@@ -36,13 +27,20 @@ const projects = [
         link:"https://study-archives.vercel.app"
     },
     {
+        id:4,
+        title:"Lecturely - Web-based Lecturer Management System",
+        description:"An application I developed as part of an academic project. It is a system that allows a school adminstration handle their lecturers and their information",
+        stack:["Java", "NetBeans", "XAMPP", "MySQL"],
+        image:"/images/lecturely.png",
+        github:"https://github.com/Topman-14/lecturely",
+    },
+    {
         id:5,
-        title:"Tesla.com Clone",
-        description:"A clone of Tesla's old landing page, revamped in my own way, with a newsletter form at the bottom",
-        stack:["Javascript", "CSS3", "HTML5"],
-        image:"/images/teslaclone.jpg",
-        github:"https://github.com/Topman-14/Side-Hustle-Tasks",
-        link:"https://topman-tesla-clone.netlify.app/"
+        title:"TU Counsel - Counselling App",
+        description:"A counseling system I contributed to, designed to offer accessible and convenient services to students through web-based resources, live chat, and appointment booking options.",
+        stack:["Django", "Sqlite", "JavaScript", "YouTube API", "Google Calender API"],
+        image:"/images/tucounsel.png",
+        github:"https://github.com/YoungAli/Real-counselling",
     }
 ]
 

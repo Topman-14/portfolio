@@ -14,16 +14,16 @@ export default function Project({isDarkMode, isLeft, project}) {
         border: isDarkMode ? "" : "1px solid #a1a1a1",
         textAlign: isLeft ? "left" : "right",
         margin: isLeft ? "20px -40px 20px 0" : "20px 0 20px -40px",
-        clipPath: isLeft ? "polygon(3% 0, 100% 0, 100% 80%, 97% 100%, 0 100%, 0 20%)" : "polygon(0 0, 97% 0%, 100% 20%, 100% 100%, 3% 100%, 0 80%)"
+        borderRadius: isLeft ? "20px 0 20px 0" : "0 20px 0 20px"
       };
       
   return (
     <FadeUpAnimation>
         <article className={styles.projectWrapper} style={isLeft? {flexDirection: "row-reverse"} : {flexDirection: "row"}}>
             <div className={styles.projectImg}>
-                <Link href={project.link} target='_blank'>
+                <Link href={project.link? project.link : project.github} target='_blank'>
                     <div className={isDarkMode? styles.imgOverlay : styles.imgOverlayWhite}></div>
-                    <Image src={project.image} height={300} width={500} alt='Preview of Fantastick homepage' priority={true}></Image>
+                    <Image src={project.image} height={300} width={500} alt='Screenshot of project' priority={true}></Image>
                 </Link>
             </div>
             <div className={styles.projectText}>

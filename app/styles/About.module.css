@@ -1,6 +1,6 @@
 .aboutText{
     width: clamp(200px, 50%, 800px);
-    font-size: 0.85em;
+    font-size: 1em;
 }
 .aboutText span{
     margin: 10px 0;

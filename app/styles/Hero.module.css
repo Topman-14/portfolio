@@ -31,7 +31,7 @@
 .descLittle{
     width: clamp(300px, 40vw, 650px);;
     padding: 20px 0;
-    font-size: 0.9em;
+    font-size: 1em;
     transition: 0.3s;
 }
 .heroImg{
@@ -45,7 +45,7 @@
     width: auto;
     height: 400px;
     z-index: 70;
-    clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+    border-radius: 40px;
     object-fit: cover;
 }
 

@@ -85,7 +85,7 @@ const Contactform = ({ isDarkMode }) => {
       <ToastContainer draggable={false}/>
       <div className='mb-5'>
         <label htmlFor='email' className='mb-3 block text-base font-medium'>
-          Email Address
+          Your Email Address
         </label>
         <Controller
           name='email'
@@ -133,7 +133,8 @@ const Contactform = ({ isDarkMode }) => {
           disabled={isLoading}
           style={{ 
             cursor: isLoading ? 'wait' : 'pointer',
-            background: isLoading ? "#444" : "#3077ae"
+            background: isLoading ? "#444" : "#3077ae",
+            borderRadius: "10px"
            }}
           className='flex hover:scale-105 bg-[#3077ae] py-2 px-5 text-md transition-transform font-semibold text-white outline-none gap-1 items-center'
         >

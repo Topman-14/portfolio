@@ -36,7 +36,7 @@ export default function Contact({darkMode}) {
         {contactInfo.map(obj => {
           return(
             <Link href={obj.link} target='_blank' key={obj.title}>
-              <div className={styles.tile} style={darkMode? {background:"#1e293b"} : {background: "#fff", border: "1px solid #333"}}>
+              <div className={darkMode? `${styles.tile} ${styles.tileDark}` : styles.tile}>
                 {selectIcon(obj.title)}
                 <p>{obj.title}</p>
                 <BsArrowRight />

@@ -1,6 +1,6 @@
 .contactContainer{
     display: flex;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
     padding: 0 20px;
 }.tile{
@@ -11,6 +11,23 @@
     display: flex;
     font-size: 1em;
     font-weight: 600;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid #333;
+    transition: 0.2s;
+}
+.tile:hover{
+    background: rgb(39, 39, 39);
+    color: white;
+}
+.tileDark{
+    transition: 0.2s;
+    background: #1e293b;
+    border: 0;
+}
+.tileDark:hover{
+    background: #deedff;
+    color: rgb(39, 39, 39);
 }
 .tile svg{
     font-size: 1.5em;
@@ -27,6 +44,7 @@
     outline: none;
     transition: 0.2s;
     background: #fff;
+    border-radius: 8px;
 }
 .formInputDark{
     width: 100%;
@@ -40,6 +58,7 @@
     outline: none;
     transition: 0.2s;
     background: #1e293b;
+    border-radius: 8px;
 }
 .formInput:focus {
       border-bottom: 2px solid #596370; 
@@ -60,6 +79,7 @@
     height: auto;
     object-fit: contain;
     object-position: top;
+    border-radius: 20px;
 
 }
 .contactFormContainer form {
