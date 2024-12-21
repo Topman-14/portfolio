@@ -19,7 +19,7 @@ export default function Project({isDarkMode, isLeft, project}) {
       
   return (
     <FadeUpAnimation>
-        <article className={styles.projectWrapper} style={isLeft? {flexDirection: "row-reverse"} : {flexDirection: "row"}}>
+        <article className={`${styles.projectWrapper}`} style={isLeft? {flexDirection: "row-reverse"} : {flexDirection: "row"}}>
             <div className={styles.projectImg}>
                 <Link href={project.link? project.link : project.github} target='_blank'>
                     <div className={isDarkMode? styles.imgOverlay : styles.imgOverlayWhite}></div>

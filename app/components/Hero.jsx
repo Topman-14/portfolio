@@ -2,6 +2,8 @@ import styles from '../styles/Hero.module.css'
 import Image from 'next/image';
 import Button from './Button';
 import Link from 'next/link';
+import myImage from '@/public/images/me.jpeg'; 
+
 
 function Hero({darkMode}) {
 
@@ -24,7 +26,13 @@ function Hero({darkMode}) {
           </div>
           <div>
             <div className={styles.heroImg}>
-              <Image src={"/images/me.png"} height={200} width={300} alt='An image of me - Topman' priority={true}/>
+              <Image  
+                src={myImage}
+                height={230} 
+                width={300} 
+                placeholder='blur'
+                alt='Me!' 
+                priority={true}/>
             </div>
           </div>
       </section>

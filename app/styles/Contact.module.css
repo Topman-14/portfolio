@@ -75,12 +75,13 @@
 }
 
 .contactFormContainer img {
-    width: clamp(250px, 50%, 600px);
-    height: auto;
-    object-fit: contain;
+    width: clamp(250px, 70%, 400px);
+    height: 100%;
+    /* max-height: 400px; */
+    object-fit: cover;
     object-position: top;
     border-radius: 20px;
-
+    margin-top: 10px;
 }
 .contactFormContainer form {
 width: clamp(0px, 60%, 800px);
@@ -132,5 +133,8 @@ width: clamp(0px, 60%, 800px);
     }
     .contactFormContainer form{
         width: 100%;
+    }
+    .contactFormContainer img {
+        display: none;
     }
 }

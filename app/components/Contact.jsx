@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { BsGithub, BsEnvelopeAtFill, BsLinkedin, BsArrowRight } from 'react-icons/bs'
 import { FaSquareXTwitter } from 'react-icons/fa6'
 import Image from 'next/image'
+import me from '@/public/images/me2.jpg'
 
 function selectIcon(iconName){
   return (iconName == "Gmail") ? <BsEnvelopeAtFill /> : (iconName == "Github") ? <BsGithub /> : (iconName == "LinkedIn") ? <BsLinkedin /> : <FaSquareXTwitter />
@@ -48,7 +49,13 @@ export default function Contact({darkMode}) {
       <h4 className='mt-[50px] mb-[30px] text-2xl font-semibold'>Feel free to ask questions!</h4>
       <p className={styles.ptag} >I usually reply in a few hours</p>
       <div className={styles.contactFormContainer}>
-        <Image src={"/images/contact.jpg"} height={300} width={400} priority={true} alt='pawpaw business meme'/> 
+        <Image 
+          src={me} 
+          // height={300} 
+          // width={400} 
+          alt='Me again!'
+          placeholder='blur'
+          /> 
         <Contactform isDarkMode={darkMode} />
       </div>
     </section>
